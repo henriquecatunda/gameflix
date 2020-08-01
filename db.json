@@ -1,0 +1,19 @@
+{
+
+    "categorias": [
+        {
+            "id":1,
+            "nome":"Front-end",
+            "discricao":"Uma cstegoria ",
+            "cor": "#cbd1ff"
+        },
+
+        {
+            "id":1,
+            "nome":"Back-end",
+            "discricao":"Uma cstegoria ",
+            "cor": "#cbd1ff"
+        }
+
+    ]
+}

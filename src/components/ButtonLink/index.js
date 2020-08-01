@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ButtonLink = styled.button`
   color: var(--white);
   border: 1px solid var(--white);
+  background-color: black;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
