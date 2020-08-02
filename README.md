@@ -1,5 +1,7 @@
 ## Gameflix 
 
+![] https://github.com/henriquecatunda/gameflix/blob/master/React-App-_1_.gif
+
 Application preview: https://gameflix-five.vercel.app/
 
 ### Technologies
