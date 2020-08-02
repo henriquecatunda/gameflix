@@ -16,9 +16,9 @@ const [categorias,setCategorias] = useState([]);
 const categoryTitles = categorias.map(({titulo})=> titulo);
 const {funcaoHander, valores} =  useForm({
 
-    titulo: 'Video padrão',
-    url: 'https://www.youtube.com/watch?v=HxVGCjTtzOQ',
-    categoria: 'Front End',
+    titulo: '',
+    url: '',
+    categoria: '',
     
 
 });
