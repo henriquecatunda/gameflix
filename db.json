@@ -1,19 +1,165 @@
 {
-
-    "categorias": [
-        {
-            "id":1,
-            "nome":"Front-end",
-            "discricao":"Uma cstegoria ",
-            "cor": "#cbd1ff"
-        },
-
-        {
-            "id":1,
-            "nome":"Back-end",
-            "discricao":"Uma cstegoria ",
-            "cor": "#cbd1ff"
-        }
-
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Corrida",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "titulo": "Esporte",
+      "cor": "#00C86F"
+      
+    },
+    {
+      "id": 3,
+      "titulo": "RPG",
+      "cor": "#9cd33b"
+      
+    },
+    {
+      "id": 4,
+      "titulo": "Ação",
+      "cor": "orange"
+    },
+    {
+      "id": 5,
+      "titulo": "Estratégia",
+      "cor": "red"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "FORZA HORIZON 4",
+      "url": "https://www.youtube.com/watch?v=9ZYQCk2PoNo"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "FORZA HORIZON 4 - O INICIO JOGO COMPLETO!",
+      "url": "https://www.youtube.com/watch?v=Za6GED95BVo"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "MARIO KART TOUR: 5 dicas INCRÍVEIS que você precisa SABER!",
+      "url": "https://www.youtube.com/watch?v=GoEFyF82dbA"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "F1 Mobile Racing",
+      "url": "https://www.youtube.com/watch?v=eelYu_DgiFk"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "MARIO KART TOUR DICAS, CONSIGA VÁRIOS ITENS NO MARIO KART TOUR",
+      "url": "https://www.youtube.com/watch?v=eRek2B9Q7eM"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "ASPHALT 8 AIRBORNE - A EVOLUÇÃO DA SÉRIE",
+      "url": "https://www.youtube.com/watch?v=TD9tFTXv6I0"
+    },
+    {
+      "id": 7,
+      "categoriaId": 2,
+      "titulo": "FIFA 20 vs PES 2020 COMPARAÇÃO!! QUEM VENCE?",
+      "url": "https://www.youtube.com/watch?v=zCAt40sSRpM"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "REPLAY: 2019 Honda NHL All-Star Game",
+      "url": "https://www.youtube.com/watch?v=B20JSjVP80M"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "SAIU NOVO PES 2020 MOBILE LICENCIADO COM LIBERTADORES EDITION E COPA DO NORDESTE",
+      "url": "https://www.youtube.com/watch?v=9T0KhBZDrqM"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Snow Party 2 Freestyle",
+      "url": "https://www.youtube.com/watch?v=BHDlDvsHZcg"
+    },
+    {
+      "id": 11,
+      "categoriaId": 3,
+      "titulo": "World of Warcraft: Battle for Azeroth Beta - A batalha por Lordaeron (Horda)",
+      "url": "https://www.youtube.com/watch?v=CvrF1KFxn-4"
+    },
+    {
+      "id": 12,
+      "categoriaId": 3,
+      "titulo": "WORLD OF WARCRAFT: SHADOWLANDS?",
+      "url": "https://www.youtube.com/watch?v=v70pT5qBqFU"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "Final Fantasy XIV - CONHEÇA O JOGO - Começando do ZERO!",
+      "url": "https://www.youtube.com/watch?v=xGVE_OiDQvU"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Jogando e Aprendendo: Final Fantasy XIII - Xbox 360",
+      "url": "https://www.youtube.com/watch?v=fqtdv4FYxM0"
+    },
+    {
+      "id": 15,
+      "categoriaId": 4,
+      "titulo": "GOD OF WAR ",
+      "url": "https://www.youtube.com/watch?v=Wf5tpMhziII"
+    },
+    {
+      "id": 16,
+      "categoriaId": 4,
+      "titulo": "God of War (PS4) - Parte 1: Kratos e Atreus !!!",
+      "url": "https://www.youtube.com/watch?v=T_Srfdv6BZA"
+    },
+    {
+      "id": 17,
+      "categoriaId": 4,
+      "titulo": "DEVIL MAY CRY 5",
+      "url": "https://www.youtube.com/watch?v=4uAGiXow1Vw"
+    },
+    {
+      "id": 18,
+      "categoriaId": 4,
+      "titulo": "UNCHARTED 4: A Thief's End - Madagascar Preview",
+      "url": "https://www.youtube.com/watch?v=d5nfXqffvyc"
+    },
+    {
+      "id": 19,
+      "categoriaId": 5,
+      "titulo": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "id": 20,
+      "categoriaId": 5,
+      "titulo": "Siegefall ",
+      "url": "https://www.youtube.com/watch?v=iCQl3jW1F50"
+    },
+    {
+      "id": 21,
+      "categoriaId": 5,
+      "titulo": "Starcraft 2: Legacy of the Void",
+      "url": "https://www.youtube.com/watch?v=IRLIyAgHl4o"
+    },
+    {
+      "id": 22,
+      "categoriaId": 5,
+      "titulo": "A cidade no buraco gelado",
+      "url": "https://www.youtube.com/watch?v=PHPQSlnsQUI"
+    }
+  ]
 }

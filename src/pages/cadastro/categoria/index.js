@@ -3,38 +3,23 @@ import PageDefault from '../../../components/PageDefaulf';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import ButtonLink from '../../../components/ButtonLink';
-
+import useForm from '../../../hooks/useForm';
+import {Pagediv, CategoriasCadastrada} from './style';
+import {PageCategoria} from '../video/style'
 
 function CadastroCategoria() {
-
-
   const valoresIniciais ={
 
     nome:'',
     discricao:'',
-    cor: '#000',
+    cor: '',
   }
 
+  const {funcaoHander, valores, clearForm} = useForm(valoresIniciais);
 
   const [categorias, setCategorias ]= useState([]);
-  const [valores, setValues ]= useState(valoresIniciais);
 
-  function setValue(chave,valor) {
-
-    setValues({
-      ...valores,
-      [chave]:valor,
-    })
-  }
-
-  function funcaoHander (infosDoEvento){
-   
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value);
-  }
-
-useEffect(() => {
+  useEffect(() => {
     console.log('alo alo');
 
     const URL_TOP = window.location.hostname.includes('localhost') ? 'http://localhost:8080/categorias'
@@ -52,8 +37,12 @@ useEffect(() => {
 
 
     return (
-      <PageDefault>
-        <h1>Cadastro de Categoria: {valores.nome}</h1>
+      <PageDefault paddingAll={0}>
+
+         <Pagediv>
+        
+
+        <h1>Cadastro de Categoria: {valores.titulo}</h1>
   
         <form onSubmit={function handSubmit(infosDoEvento){
 
@@ -64,21 +53,21 @@ useEffect(() => {
               valores
             ]);
 
-            setValues(valoresIniciais)
+            clearForm(valoresIniciais);
         }}>
   
 
           <FormField 
-            label="Nome da Categoria:"
+            label="titulo da Categoria"
             type="text"
             name="nome"
-            value={valores.nome}
+            value={valores.titulo}
             onChange={funcaoHander}
 
           />
 
             <FormField
-            label="Discricao:"
+            label="Discricao"
             type="textarea"
             name="discricao"
             value={valores.discricao}
@@ -86,7 +75,7 @@ useEffect(() => {
             />
 
             <FormField
-            label="Cor:"
+            label="Cor"
             type="color"
             name="cor"
             value={valores.cor}
@@ -98,26 +87,35 @@ useEffect(() => {
           </ButtonLink>
         </form>
   
-        { categorias.length === 0 && (<div>
-            {}
-            Loading..
+        <PageCategoria>
+        <Link to="/">
+          Ir para Home
+        </Link>
+        </PageCategoria>
+        
+        </Pagediv>
 
-        </div>)}
+        <CategoriasCadastrada>
+
+          { categorias.length === 0 && (<div>
+              {}
+              Loading..
+
+          </div>)}
+
 
             <ul>
-                {categorias.map((categoria, indice) => {
+                  {categorias.map((categoria) => {
 
-                  return (
-                    <li key={`${categoria} ${indice}`}>
-                      {categoria.nome}
-                    </li>
-                  )
-                })}
-            </ul>
-  
-        <Link to="/">
-          Ir para home
-        </Link>
+                    return (
+                      <li key={`${categoria.id}` }>
+                        {categoria.titulo}
+                      </li>
+                    )
+                  })}
+              </ul>
+        
+        </CategoriasCadastrada>
       </PageDefault>
     )
   }

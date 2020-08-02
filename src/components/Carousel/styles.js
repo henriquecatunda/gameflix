@@ -45,6 +45,7 @@ export const VideoCardList = styled.ul`
   li {
     margin-right: 16px;
   }
+
 `;
 
 export const VideoCardGroupContainer = styled.section`
@@ -52,4 +53,5 @@ export const VideoCardGroupContainer = styled.section`
   min-height: 197px;
   margin-left: 5%;
   margin-bottom: 16px;
+
 `;
