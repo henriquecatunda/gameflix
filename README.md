@@ -1,4 +1,4 @@
-# Gameflix 
+## Gameflix 
 
 Application preview: https://gameflix-five.vercel.app/
 
