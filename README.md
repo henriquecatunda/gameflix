@@ -13,7 +13,8 @@ This project was developed with the following technologies:
 ### How To Use
 
 To clone and run this application, you'll need Git, Node.js. From your command line:
-Simple install
+
+### Simple install
 
 #Clone this repository
 $git clone https://github.com/henriquecatunda/gameflix.git
