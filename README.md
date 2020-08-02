@@ -16,15 +16,15 @@ To clone and run this application, you'll need Git, Node.js. From your command l
 Simple install
 
 #Clone this repository
-$ git clone https://github.com/daanielcruz/notflix
+$git clone https://github.com/henriquecatunda/gameflix.git
 
 #Go into the repository
-$ cd notflix
+$cd notflix
 
 #Install dependencies
-$ yarn install
+$yarn install
 
 #Start development server
-$ yarn dev
+$yarn dev
 
 #The React project should have open, and the fake back-end should have running at port 8080.
