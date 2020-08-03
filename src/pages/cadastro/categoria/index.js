@@ -1,22 +1,23 @@
 import React ,{useState, useEffect} from 'react';
 import PageDefault from '../../../components/PageDefaulf';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import ButtonLink from '../../../components/ButtonLink';
 import useForm from '../../../hooks/useForm';
 import {Pagediv, CategoriasCadastrada} from './style';
+import categoriasRepository from '../../../repositories/categorias'
 import {PageCategoria} from '../video/style'
 
 function CadastroCategoria() {
   const valoresIniciais ={
 
-    nome:'',
+    titulo:'',
     discricao:'',
     cor: '',
   }
 
   const {funcaoHander, valores, clearForm} = useForm(valoresIniciais);
-
+  const history = useHistory();
   const [categorias, setCategorias ]= useState([]);
 
   useEffect(() => {
@@ -35,6 +36,35 @@ function CadastroCategoria() {
 
 }, []);
 
+function handSubmit(event) {
+  event.preventDefault();
+  const categoriaUpperCase = categorias.map((categoria) => {
+    let categoriaUpper = categoria.titulo.toUpperCase();
+    categoriaUpper = categoriaUpper.replace(/\s/g, '');
+    return categoriaUpper;
+  });
+
+  let valueUpper = valores.titulo.toUpperCase();
+  valueUpper = valueUpper.replace(/\s/g, '');
+
+  if (categoriaUpperCase.includes(valueUpper)) {
+    alert('Categoria já existente');
+    clearForm();
+  } else {
+    setCategorias([
+      ...categorias,
+      valores,
+    ]);
+    categoriasRepository.create({
+      titulo: valores.titulo,
+      cor: valores.cor,
+
+    });
+    clearForm();
+    history.push('/cadastro/video');
+  }
+}
+
 
     return (
       <PageDefault paddingAll={0}>
@@ -44,9 +74,9 @@ function CadastroCategoria() {
 
         <h1>Cadastro de Categoria: {valores.titulo}</h1>
   
-        <form onSubmit={function handSubmit(infosDoEvento){
+        <form onSubmit={handSubmit}>
 
-            infosDoEvento.preventDefault();
+            {/* infosDoEvento.preventDefault();
 
             setCategorias([
               ...categorias,
@@ -55,12 +85,12 @@ function CadastroCategoria() {
 
             clearForm(valoresIniciais);
         }}>
-  
+   */}
 
           <FormField 
             label="titulo da Categoria"
             type="text"
-            name="nome"
+            name="titulo"
             value={valores.titulo}
             onChange={funcaoHander}
 

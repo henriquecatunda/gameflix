@@ -14,7 +14,8 @@ export const Pagediv = styled.div`
  
     width: 60%;
     padding:20px;
-    border: 2px solid #D60909;
+    
+    /* border: 2px solid #D60909; */
     
 
     margin-top: 50px;
