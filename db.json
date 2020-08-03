@@ -24,6 +24,11 @@
       "id": 5,
       "titulo": "Estratégia",
       "cor": "red"
+    },
+    {
+      "titulo": "Simulação",
+      "cor": "#82d917",
+      "id": 6
     }
   ],
   "videos": [
@@ -158,6 +163,12 @@
       "categoriaId": 5,
       "titulo": "A cidade no buraco gelado",
       "url": "https://www.youtube.com/watch?v=PHPQSlnsQUI"
+    },
+    {
+      "titulo": "stardew valley",
+      "url": "https://www.youtube.com/watch?v=ALZg5XeOENQ",
+      "categoriaId": 6,
+      "id": 23
     }
   ]
 }
